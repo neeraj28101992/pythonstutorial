@@ -1,10 +1,12 @@
+import cmath
 def sum_of_num():
     num = int(input("Enter first number"))
     num+=int(input("Enter second number"))
     return num
 
 def find_squr_rt():
-    pass
+    num = int(input("Enter the number"))
+    print("Output is : %d"%int(cmath.sqrt(num)))
 
 def area_of_triangle():
     pass
