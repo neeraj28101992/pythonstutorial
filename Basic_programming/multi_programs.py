@@ -42,9 +42,30 @@ try:
 except Exception:
     print("Error faced")
 
-action = input("\nEnter you choice")
-while action != 0:
-    if(action == 1):
+#action =
+while True:
+    action = int(input("\nEnter you choice"))
+    if action == 0:
+        break
+    elif action == 1:
         print(sum_of_num())
-    elif(action == 2):
+    elif action == 2:
         find_squr_rt()
+    elif action == 3:
+        area_of_triangle()
+    elif action == 4:
+        solve_quadratic_eq()
+    elif action == 5:
+        swap_number()
+    elif action == 6:
+        gen_random_num()
+    elif action == 7:
+        km_to_miles()
+    elif action == 8:
+        check_odd_even()
+    elif action == 9:
+        largest_num()
+    elif action == 10:
+        prime_no_in_between()
+    else:
+        print("Wrong choice mate")
