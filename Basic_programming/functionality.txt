@@ -1,0 +1,10 @@
+Sum of 2 numbers
+Find square root
+Calculate area of triangle
+Solve quadratic equations
+Swap 2 numbers
+Generate a random number
+Convert Kilometers to miles
+Check odd even number
+Largest number among 3
+Print all prime number to intervals
