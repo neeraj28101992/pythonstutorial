@@ -1,50 +1,92 @@
 import cmath
+import random
+
 def sum_of_num():
     num = int(input("Enter first number"))
-    num+=int(input("Enter second number"))
+    num += int(input("Enter second number"))
     return num
+
 
 def find_squr_rt():
     num = int(input("Enter the number"))
-    print("Output is : %d"%int(cmath.sqrt(num)))
+    print("Output is : %f" % num ** .5)
+
 
 def area_of_triangle():
-    pass
+    num_1 = int(input("Enter the first number: "))
+
 
 def solve_quadratic_eq():
     pass
 
+
 def swap_number():
-    pass
+    num_1 = int(input("Enter the first number: "))
+    num_2 = int(input("Enter the second number: "))
+    print("Before swap: ", num_1, num_2)
+    num_1 = num_1+num_2
+    num_2 = num_1 - num_2
+    num_1 = num_1 - num_2
+    print("After swap: ", num_1, num_2)
+
 
 def gen_random_num():
-    pass
+    print("Random number generated is ; ",random.randint(1,100))
+
 
 def km_to_miles():
-    pass
+    num = int(input("Enter the distance in KM"))
+    print(num,"Km = ",num*0.621371, "Miles")
+
 
 def check_odd_even():
+    num = int(input("Enter the number:"))
+    print("even") if num % 2 == 0 else print("odd")
     pass
+
 
 def largest_num():
+    num1 = int(input("Enter the first number:"))
+    num2 = int(input("Enter the second number:"))
+    num3 = int(input("Enter the third number:"))
+
+    if num1 > num2 and num1 > num3:
+        print(num1, " is biggest")
+    elif num2 > num3:
+        print(num2, " is biggest")
+    else:
+        print(num3, " is biggest")
     pass
 
+
 def prime_no_in_between():
-    pass
+    num1 = int(input("Enter the starting range:"))
+    num2 = int(input("Enter the ending range:"))
+    for num1 in num2:
+        count = 0
+        for j in num1:
+            if num1 % j == 0:
+                count+=1
+
+        if count <= 0:
+            print(num1)
+
+
+
 
 print("This program is contains the below functions:")
 try:
     f = open("functionality.txt", "r")
-    index =1
+    index = 1
     print("0 Exit")
     for lines in f.readlines():
-        print (index, lines, end="")  # Here end="" is used to suppress the \n that print function adds
-        index +=1
+        print(index, lines, end="")  # Here end="" is used to suppress the \n that print function adds
+        index += 1
     f.close()
 except Exception:
     print("Error faced")
 
-#action =
+# action =
 while True:
     action = int(input("\nEnter you choice"))
     if action == 0:
