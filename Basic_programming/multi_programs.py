@@ -62,14 +62,14 @@ def largest_num():
 def prime_no_in_between():
     num1 = int(input("Enter the starting range:"))
     num2 = int(input("Enter the ending range:"))
-    for num1 in num2:
+    for i in range(num1, num2):
         count = 0
-        for j in num1:
-            if num1 % j == 0:
+        for j in range(1,i):
+            if divmod(i, j) == 0:
                 count+=1
 
-        if count <= 0:
-            print(num1)
+        if count <=2:
+            print(i)
 
 
 
