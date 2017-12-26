@@ -29,7 +29,7 @@ edibles = ["ham", "spam","eggs","nuts"]
 for food in edibles:
     if food == "spam":
         print("No more spam please!")
-        break           # Here when the spam is iterated then it will break the for loop and else will be called
+        break           # Here when the spam is iterated then it will break the for loop
     print("Great, delicious " + food)
 else:
     print("I am so glad: No spam!")
